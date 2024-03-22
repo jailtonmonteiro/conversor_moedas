@@ -3,8 +3,12 @@ import 'package:conversor_moedas/pages/homepage.dart';
 
 void main() async {
   runApp(
-    const MaterialApp(
-      home: HomePage(),
+    MaterialApp(
+      home: const HomePage(),
+      theme: ThemeData(
+        hintColor: Colors.amber,
+        primaryColor: Colors.white,
+      ),
     ),
   );
 }
